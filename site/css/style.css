@@ -1,0 +1,69 @@
+:root {
+    --green: #00c67a;
+    --dark: #0f0f0f;
+    --gray: #f0f0f0;
+    --gradient: linear-gradient(135deg, #00c67a, #00a5ff);
+    --gradient1: linear-gradient(135deg, #079e64, #084464);
+    --primary: #00C67A;
+    --primary-dark: #00A56A;
+    --light: #F8F9FA;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--gray);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  header {
+    background: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--green);
+  }
+
+  footer {
+    background: var(--gradient1);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
+

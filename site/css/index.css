@@ -1,0 +1,175 @@
+.hero {
+    background-image: url('../images/1.jpg');
+    color: white;
+    padding: 5rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    text-align: center;
+    background-size: cover; 
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight:700;
+  }
+
+  .hero a {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+  }
+
+  .hero a:hover {
+    background: #eee;
+  }
+
+/* Стили для блока аннотации */
+  .annotation-section {
+     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    background: white;
+    padding: 4rem 0;
+    margin-top: -60px;
+  }
+  
+  .annotation-card {
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 198, 122, 0.1);
+    overflow: hidden;
+    transform: translateY(20px);
+    transition: var(--transition);
+  }
+
+  .annotation-header {
+    color: #00A56A;
+    text-align: right;
+    margin-right: 5%;
+    font-size: 25px;
+  }
+    
+  .annotation-content {
+    padding: 2.5rem;
+  }
+  
+  .annotation-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  .goals-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray);
+  }
+  
+  .goals-title {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .goals-title i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .goal-item {
+    display: flex;
+    margin-bottom: 1.2rem;
+    align-items: flex-start;
+  }
+  
+  .goal-icon {
+    color: var(--primary);
+    margin-right: 12px;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+  
+  .tasks-section {
+    margin-top: 2.5rem;
+    background: var(--gray);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+  }
+  
+  .tasks-title {
+    display: flex;
+    align-items: center;
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  
+  .tasks-title i {
+    margin-right: 10px;
+  }
+  
+  .task-list {
+    list-style-type: none;
+  }
+  
+  .task-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .task-item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .annotation-content {
+      padding: 1.5rem;
+    }
+    
+    .annotation-header h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+
+
+  .support {
+    background: white;
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+  }

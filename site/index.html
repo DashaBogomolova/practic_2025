@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ИТ-сервисы — Цифровой университет</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Цифровой Университет</div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about_project.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ИТ-сервисы для Цифрового университета</h1>
+      <p>Технологии, которые двигают цифровой университет вперёд</p>
+    </div>
+  </section>
+
+  <section class="annotation-section">
+    <div class="annotation-card">
+      <div class="annotation-header">
+        <h2>Аннотация проекта</h2>
+      </div>
+      
+      <div class="annotation-content">
+        <p>Проект "ИТ-сервисы для Цифрового университета" направлен на создание современной цифровой экосистемы для Московского Политеха. Мы разрабатываем комплекс решений, включающий мобильные приложения, аналитические сервисы и системы автоматизации учебных процессов.</p>
+        
+        <p>Мы стремимся повысить эффективность образовательного процесса за счёт внедрения цифровых технологий, улучшить взаимодействие между студентами и преподавателями, а также создать удобную платформу для управления учебной деятельностью.</p>
+        
+        <div class="goals-section">
+          <div class="goals-title">
+            <i class="fas fa-bullseye"></i>
+            <span>Цели нашей команды</span>
+          </div>
+          
+          <div class="goal-item">
+            <div class="goal-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>Разработать удобное мобильное приложение личного кабинета</div>
+          </div>
+          
+        <div class="tasks-section">
+          <div class="tasks-title">
+            <i class="fas fa-tasks"></i>
+            <span>Задачи</span>
+          </div>
+          
+          <ul class="task-list">
+            <li class="task-item">разработать дизайн для новых модулей</li>
+            <li class="task-item">определить части проекта, нуждающиеся в доработке до релиза android-версии</li>
+            <li class="task-item">исправить все найденные недоработки</li>
+            <li class="task-item">изменить интерфейс приложений до полного соответствия с разработанным дизайном</li>
+            <li class="task-item">провести тестирование приложений, исправить баги</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Цифровой Университет. Все права защищены.
+  </footer>
+
+  <script>
+    // Анимация появления по скроллу
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
