@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Наша команда</title>
+  <title>Журнал</title>
   <link rel="icon" href="images/icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/journal.css">
 </head>
 
 <body>
@@ -23,6 +25,109 @@
       <a href="resources.html">Ресурсы</a>
     </nav>
   </header>
+  
+
+  <div class="journal-header">
+    <h1>Журнал проекта</h1>
+    <p>Последние новости и достижения в разработке мобильных приложений</p>
+  </div>
+
+  <div class="journal-container">
+    <!-- Пост 1 -->
+    <div class="journal-post">
+      <div class="post-header">
+        <span class="post-date">15 мая 2024</span>
+        <span class="post-platform">iOS & Android</span>
+      </div>
+      <div class="post-content">
+        <h3 class="post-title">Завершена разработка системы авторизации</h3>
+        <div class="post-text">
+          <p>На этой неделе мы успешно реализовали единую систему авторизации для обеих платформ. Теперь пользователи могут входить в приложение с помощью:</p>
+          <ul>
+            <li>Университетского логина и пароля</li>
+            <li>Электронной почты</li>
+            <li>Социальных сетей (ВКонтакте, Google)</li>
+          </ul>
+          <p>Система обеспечивает безопасное хранение данных и автоматическое обновление токенов доступа.</p>
+        </div>
+     
+        <div class="post-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%"></div>
+          </div>
+          <div class="progress-text">
+            <span>Общий прогресс: 85%</span>
+            <span>iOS: 90% | Android: 80%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Пост 2 -->
+    <div class="journal-post">
+      <div class="post-header">
+        <span class="post-date">28 апреля 2024</span>
+        <span class="post-platform">Android</span>
+      </div>
+      <div class="post-content">
+        <h3 class="post-title">Обновлен дизайн расписания занятий</h3>
+        <div class="post-text">
+          <p>Мы полностью переработали интерфейс раздела "Расписание" в Android-приложении. Основные улучшения:</p>
+          <ul>
+            <li>Новая система цветовых меток для разных типов занятий</li>
+            <li>Возможность быстрого переключения между неделями</li>
+            <li>Интеграция с календарем устройства</li>
+            <li>Виджет для главного экрана с ближайшими парами</li>
+          </ul>
+          <p>Тестирование новой версии показало увеличение скорости навигации на 40%.</p>
+        </div>
+        
+        <div class="post-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%"></div>
+          </div>
+          <div class="progress-text">
+            <span>Общий прогресс: 70%</span>
+            <span>Готовность Android-версии: 75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Пост 3 -->
+    <div class="journal-post">
+      <div class="post-header">
+        <span class="post-date">10 апреля 2024</span>
+        <span class="post-platform">iOS</span>
+      </div>
+      <div class="post-content">
+        <h3 class="post-title">Старт разработки iOS-приложения</h3>
+        <div class="post-text">
+          <p>Мы начали работу над iOS-версией мобильного приложения университета. На текущем этапе:</p>
+          <ul>
+            <li>Создана базовая архитектура приложения на SwiftUI</li>
+            <li>Разработана дизайн-система в соответствии с гайдлайнами Apple</li>
+            <li>Реализованы первые экраны: главная страница и профиль</li>
+            <li>Настроена интеграция с университетским API</li>
+          </ul>
+          <p>Первые тесты показали отличную производительность даже на старых устройствах iPhone.</p>
+        </div>
+       
+        <div class="post-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 35%"></div>
+          </div>
+          <div class="progress-text">
+            <span>Общий прогресс: 35%</span>
+            <span>Готовность iOS-версии: 40%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
   
   <footer>
     © 2025 Цифровой Университет. Все права защищены.
