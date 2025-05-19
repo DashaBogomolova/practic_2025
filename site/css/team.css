@@ -1,0 +1,100 @@
+:root {
+  --primary: #00C67A;
+  --primary-dark: #00A56A;
+  --dark: #1A1A1A;
+  --light: #F8F9FA;
+  --gray: #E9ECEF;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.team-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  margin-top: -20px;
+  padding: 0 1.5rem;
+}
+
+.team-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 198, 122, 0.1);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+.team-header {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.team-content {
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.members-table thead {
+  background-color: var(--primary);
+  color: white;
+}
+
+.members-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.members-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.members-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 198, 122, 0.05);
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.table-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+

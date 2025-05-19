@@ -3,237 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ИТ-сервисы — Цифровой университет</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green: #00c67a;
-      --dark: #0f0f0f;
-      --gray: #f0f0f0;
-      --gradient: linear-gradient(135deg, #00c67a, #00a5ff);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--gray);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: white;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      z-index: 100;
-    }
-
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--green);
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--green);
-    }
-
-    .hero {
-      background: var(--gradient);
-      color: white;
-      padding: 5rem 2rem;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero a {
-      padding: 0.75rem 1.5rem;
-      background: white;
-      color: var(--green);
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-
-    .hero a:hover {
-      background: #eee;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    h2::after {
-      content: "";
-      width: 60px;
-      height: 4px;
-      background: var(--green);
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-    }
-
-    .cards {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: var(--green);
-    }
-
-    .support {
-      background: white;
-      border-radius: 2rem;
-      padding: 3rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    footer {
-      background: #fff;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
-    }
-  </style>
+  <title>Наша команда</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/team.css">
 </head>
-<body>
 
+<body>
   <header>
     <div class="logo">Цифровой Университет</div>
     <nav>
-      <a href="#">Главная</a>
-      <a href="#services">Сервисы</a>
-      <a href="#support">Поддержка</a>
-      <a href="#">Вход</a>
+      <a href="index.html">Главная</a>
+      <a href="about_project.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
     </nav>
   </header>
-
-  <section class="hero">
-    <h1>Инновационные ИТ-сервисы</h1>
-    <p>Технологии, которые двигают цифровой университет вперёд</p>
-    <a href="#services">Открыть сервисы</a>
-  </section>
-
-  <section class="fade-in">
-    <h2>Возможности платформы</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>🎓 Онлайн-обучение</h3>
-        <p>Доступ к лекциям, заданиям, форумам и экзаменам — 24/7</p>
+  
+   <div class="team-header">
+        <h2>Участники проекта</h2>
+        <p>Команда разработки ИТ-сервисов для Цифрового университета</p>
       </div>
-      <div class="card">
-        <h3>📂 Цифровые документы</h3>
-        <p>Подача заявлений, получение справок и архив — в пару кликов</p>
-      </div>
-      <div class="card">
-        <h3>💳 Электронный пропуск</h3>
-        <p>Вход на кампус, библиотеку и мероприятия с помощью QR</p>
+
+  <section class="team-section">
+    <div class="team-card fade-in">
+      <div class="team-content">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Поиск участников...">
+        </div>
+        
+        <table class="members-table">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>ФИО</th>
+              <th>Учебная группа</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Акопян Владимир Ашотович</td><td>241-339</td></tr>
+            <tr><td>2</td><td>Алексеев Кирилл Игоревич</td><td>231-321</td></tr>
+            <tr><td>3</td><td>Алюков Динияр Ильдусович</td><td>241-336</td></tr>
+            <tr><td>4</td><td>Базрова Анжелина Алановна</td><td>231-3211</td></tr>
+            <tr><td>5</td><td>Балашов Игорь Геннадьевич</td><td>231-3211</td></tr>
+            <tr><td>6</td><td>Белый Данила Юрьевич</td><td>221-361</td></tr>
+            <tr><td>7</td><td>Бердников Пётр Сергеевич</td><td>241-332</td></tr>
+            <tr><td>8</td><td>Бидзюра Алиса Александровна</td><td>241-339</td></tr>
+            <tr><td>9</td><td>Богомолова Дарья Васильевна</td><td>241-336</td></tr>
+            <tr><td>10</td><td>Бурдин Евгений Николаевич</td><td>211-724</td></tr>
+            <tr><td>11</td><td>Вольская Елизавета Сергеевна</td><td>241-338</td></tr>
+            <tr><td>12</td><td>Гавриш Александрина Алексеевна</td><td>241-334</td></tr>
+            <tr><td>13</td><td>Голобурдо Андрей Антонович</td><td>221-323</td></tr>
+            <tr><td>14</td><td>Городецкий Михаил Олегович</td><td>241-332</td></tr>
+            <tr><td>15</td><td>Грачев Иван Павлович</td><td>241-338</td></tr>
+            <tr><td>16</td><td>Гридасов Альберт Владимирович</td><td>231-339</td></tr>
+            <tr><td>17</td><td>Гугнин Федор Алексеевич</td><td>231-323</td></tr>
+            <tr><td>18</td><td>Деген Светислав Владимирович</td><td>241-351</td></tr>
+            <tr><td>19</td><td>Дерендяев Дмитрий Сергеевич</td><td>211-722</td></tr>
+            <tr><td>20</td><td>Евглевская Галина Андреевна</td><td>241-331</td></tr>
+            <tr><td>21</td><td>Егоров Александр Михайлович</td><td>221-323</td></tr>
+            <tr><td>22</td><td>Еремина Анастасия Сергеевна</td><td>241-352</td></tr>
+            <tr><td>23</td><td>Жаманова Анастасия Павловна</td><td>241-336</td></tr>
+            <tr><td>24</td><td>Зайцев Никита Дмитриевич</td><td>241-336</td></tr>
+            <tr><td>25</td><td>Засташков Даниил Андреевич</td><td>221-361</td></tr>
+            <tr><td>26</td><td>Имаретли Дамир Эмилевич</td><td>221-323</td></tr>
+            <tr><td>27</td><td>Качалов Александр Николаевич</td><td>221-323</td></tr>
+            <tr><td>28</td><td>Князев Григорий Андреевич</td><td>231-339</td></tr>
+            <tr><td>29</td><td>Коваленко Глеб Евгеньевич</td><td>241-336</td></tr>
+            <tr><td>30</td><td>Корепов Андрей Алексеевич</td><td>241-352</td></tr>
+            <tr><td>31</td><td>Косарева Светлана Александровна</td><td>231-3211</td></tr>
+            <tr><td>32</td><td>Коссов Иван Олегович</td><td>241-336</td></tr>
+            <tr><td>33</td><td>Коцай Михаил Семенович</td><td>241-333</td></tr>
+            <tr><td>34</td><td>Кошляк Михаил Ильич</td><td>241-352</td></tr>
+            <tr><td>35</td><td>Кузьмина Полина Юрьевна</td><td>231-332</td></tr>
+            <tr><td>36</td><td>Куликов Максим Сергеевич</td><td>241-339</td></tr>
+            <tr><td>37</td><td>Лаптев Егор Иванович</td><td>221-353</td></tr>
+            <tr><td>38</td><td>Линников Егор Владиславович</td><td>231-323</td></tr>
+            <tr><td>39</td><td>Макарова Дарья Антоновна</td><td>221-361</td></tr>
+            <tr><td>40</td><td>Манжиков Владимир Станиславович</td><td>241-339</td></tr>
+            <tr><td>41</td><td>Махоткин Александр Михайлович</td><td>241-332</td></tr>
+            <tr><td>42</td><td>Мельников Кирилл Игоревич</td><td>241-353</td></tr>
+            <tr><td>43</td><td>Мерданов Худайназар</td><td>241-352</td></tr>
+            <tr><td>44</td><td>Мирзоева Камилла Джунайдуллоевна</td><td>221-376</td></tr>
+            <tr><td>45</td><td>Муравьев Савелий Сергеевич</td><td>241-334</td></tr>
+            <tr><td>46</td><td>Неклюдов Вячеслав Валерьевич</td><td>231-363</td></tr>
+            <tr><td>47</td><td>Неретин Владислав Евгеньевич</td><td>211-331</td></tr>
+            <tr><td>48</td><td>Никитин Руслан Романович</td><td>221-372</td></tr>
+            <tr><td>49</td><td>Николаев Кирилл Дмитриевич</td><td>241-333</td></tr>
+            <tr><td>50</td><td>Олбутова Ксения Андреевна</td><td>221-363</td></tr>
+            <tr><td>51</td><td>Орлов Игорь Сергеевич</td><td>241-353</td></tr>
+            <tr><td>52</td><td>Пеньков Данил Тимофеевич</td><td>221-353</td></tr>
+            <tr><td>53</td><td>Погонцев Данил Сергеевич</td><td>241-336</td></tr>
+            <tr><td>54</td><td>Пухтинский Данил Алексеевич</td><td>211-723</td></tr>
+            <tr><td>55</td><td>Романов Егор Романович</td><td>241-333</td></tr>
+            <tr><td>56</td><td>Росляков Евгений Алексеевич</td><td>221-373</td></tr>
+            <tr><td>57</td><td>Рындя Никита Витальевич</td><td>241-339</td></tr>
+            <tr><td>58</td><td>Сафонов Александр Олегович</td><td>241-352</td></tr>
+            <tr><td>59</td><td>Свиридов Егор Александрович</td><td>241-339</td></tr>
+            <tr><td>60</td><td>Себелева Екатерина Алексеевна</td><td>241-332</td></tr>
+            <tr><td>61</td><td>Соколов Виталий Владимирович</td><td>211-331</td></tr>
+            <tr><td>62</td><td>Татарчук Михаил Владиславович</td><td>211-331</td></tr>
+            <tr><td>63</td><td>Тимаев Вадим Сергеевич</td><td>231-364</td></tr>
+            <tr><td>64</td><td>Тимаков Антон Андреевич</td><td>241-331</td></tr>
+            <tr><td>65</td><td>Улинкин Леонид Евгеньевич</td><td>241-336</td></tr>
+            <tr><td>66</td><td>Федоркина Анастасия Игоревна</td><td>221-375</td></tr>
+            <tr><td>67</td><td>Филатова Анфиса Дмитриевна</td><td>241-332</td></tr>
+            <tr><td>68</td><td>Фролов Сергей Владимирович</td><td>241-352</td></tr>
+            <tr><td>69</td><td>Храмцов Максим Александрович</td><td>241-339</td></tr>
+            <tr><td>70</td><td>Чуркина Екатерина Андреевна</td><td>221-822</td></tr>
+            <tr><td>71</td><td>Шагиев Влас Дмитриевич</td><td>211-724</td></tr>
+            <tr><td>72</td><td>Шкоропад Егор Николаевич</td><td>241-336</td></tr>
+            <tr><td>73</td><td>Щеблыкин Константин Евгеньевич</td><td>241-351</td></tr>
+          </tbody>
+        </table>
+        
+        <div class="table-footer">
+          <div class="table-count">Всего участников: 73</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="support" class="fade-in">
-    <h2>Поддержка</h2>
-    <div class="support">
-      <p>Мы рядом, если что-то пойдет не так</p>
-      <p>📞 +7 (812) 123-4567 &nbsp;&nbsp; 📧 support@university.ru</p>
-      <p>Telegram-бот: @unitech_support</p>
-    </div>
-  </section>
-
+  <script>
+    // Поиск по таблице
+    const searchInput = document.querySelector('.search-box input');
+    const tableRows = document.querySelectorAll('.members-table tbody tr');
+    
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      
+      tableRows.forEach(row => {
+        const name = row.cells[1].textContent.toLowerCase();
+        const group = row.cells[2].textContent.toLowerCase();
+        
+        if (name.includes(searchTerm) || group.includes(searchTerm)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  </script>
+  
   <footer>
     © 2025 Цифровой Университет. Все права защищены.
   </footer>
-
-  <script>
-    // Анимация появления по скроллу
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.1,
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
 </body>
 </html>
