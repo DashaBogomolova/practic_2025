@@ -3,212 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ИТ-сервисы — Цифровой университет</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green: #00c67a;
-      --dark: #0f0f0f;
-      --gray: #f0f0f0;
-      --gradient: linear-gradient(135deg, #00c67a, #00a5ff);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--gray);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: white;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      z-index: 100;
-    }
-
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--green);
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--green);
-    }
-
-    .hero {
-      background: var(--gradient);
-      color: white;
-      padding: 5rem 2rem;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero a {
-      padding: 0.75rem 1.5rem;
-      background: white;
-      color: var(--green);
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-
-    .hero a:hover {
-      background: #eee;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    h2::after {
-      content: "";
-      width: 60px;
-      height: 4px;
-      background: var(--green);
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-    }
-
-    .cards {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: var(--green);
-    }
-
-    .support {
-      background: white;
-      border-radius: 2rem;
-      padding: 3rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    footer {
-      background: #fff;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
-    }
-  </style>
+  <title>Наша команда</title>
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/about_project.css">
 </head>
-<body>
 
+<body>
   <header>
     <div class="logo">Цифровой Университет</div>
     <nav>
-      <a href="#">Главная</a>
-      <a href="#services">Сервисы</a>
-      <a href="#support">Поддержка</a>
-      <a href="#">Вход</a>
+      <a href="index.html">Главная</a>
+      <a href="about_project.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Инновационные ИТ-сервисы</h1>
-    <p>Технологии, которые двигают цифровой университет вперёд</p>
-    <a href="#services">Открыть сервисы</a>
-  </section>
+  <div class="app-header">
+        <h2>Мобильные приложения</h2>
+        <p>Доступ к сервисам университета в вашем кармане</p>
+      </div>
 
-  <section class="fade-in">
-    <h2>Возможности платформы</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>🎓 Онлайн-обучение</h3>
-        <p>Доступ к лекциям, заданиям, форумам и экзаменам — 24/7</p>
-      </div>
-      <div class="card">
-        <h3>📂 Цифровые документы</h3>
-        <p>Подача заявлений, получение справок и архив — в пару кликов</p>
-      </div>
-      <div class="card">
-        <h3>💳 Электронный пропуск</h3>
-        <p>Вход на кампус, библиотеку и мероприятия с помощью QR</p>
-      </div>
-    </div>
-  </section>
+  <section class="mobile-app-section">
+    <div class="app-card fade-in">
+      <div class="app-content">
 
-  <section id="support" class="fade-in">
-    <h2>Поддержка</h2>
-    <div class="support">
-      <p>Мы рядом, если что-то пойдет не так</p>
-      <p>📞 +7 (812) 123-4567 &nbsp;&nbsp; 📧 support@university.ru</p>
-      <p>Telegram-бот: @unitech_support</p>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <p> 
+              На данный момент пользование сайтом нашего университета с мобильного устройства создает ряд неудобств. 
+              Нужно каждый раз писать адрес в поисковик, заново входить в личный кабинет, а также заходить по абсолютно другой ссылке чтобы, например, получить текста информацию о структуре университета. На самом же сайте среди мелкого искать нужный раздел, среди огромного количества ссылок, разной степени полезности.
+            </p>
+            <p> 
+              Можно сделать вывод, что использование мобильного приложения, посвященного Московскому политехническому университету, не только упростит восприятие информации на мобильном устройстве, но и позволит пользователю оперативно взаимодействовать с множеством интерактивных элементов сайта. 
+            </p>
+            <p> 
+              Нашим проектом является процесс продвижения и представления деятельности ВУЗа в мобильной среде, процесс разработки и внедрения удобного мобильного приложения, предназначенного для студентов, преподавателей и сотрудников университета. Это комплексная работа, направленная на удовлетворение потребностей студентов и преподавателей в доступе к информации и удобстве пользования технологий в образовательном процессе. 
+            </p>
+            <p> 
+              В этом семестре перед нами поставлена цель разработки MVP приложения для iOS, а также доработка и публикация приложения для ОС android. 
+            </p>
+          </div>
+       
+        </div>
+
+        <div class="platform-tabs">
+          <div class="platform-tab active" data-tab="android">Android</div>
+          <div class="platform-tab" data-tab="ios">iOS</div>
+        </div>
+        
+        <div class="platform-content active" id="android-content">
+          <h3>Личный кабинет для Android</h3>
+          <p>Современное мобильное приложение, разработанное специально для студентов и преподавателей Московского Политеха, предоставляющее удобный доступ ко всем образовательным сервисам университета.</p>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><i class="fas fa-shield-alt"></i> Безопасность</h4>
+              <p>Улучшенные механизмы аутентификации и защиты персональных данных пользователей. Реализовано безопасное хранение учетных данных.</p>
+            </div>
+            <div class="feature-card">
+              <h4><i class="fas fa-user-friends"></i> Удобный интерфейс</h4>
+              <p>Интуитивно понятный дизайн с поддержкой Material Design 3. Свайп-пейджер для быстрой навигации между разделами.</p>
+            </div>
+            <div class="feature-card">
+              <h4><i class="fas fa-sync-alt"></i> Автономная работа</h4>
+              <p>Возможность просматривать расписание и успеваемость без подключения к интернету с последующей синхронизацией.</p>
+            </div>
+          </div>
+          
+          <h4>Последние обновления</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Май 2024</div>
+              <p>Добавлен свайп-пейджер для навигации между разделами приложения</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Апрель 2024</div>
+              <p>Обновлен дизайн иконок в соответствии с Material Design 3</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Март 2024</div>
+              <p>Улучшена система безопасности и хранения пользовательских данных</p>
+            </div>
+          </div>
+              
+          <div class="qr-block">
+            <img style="width: 150px; height: 150px;" src="images/Рисунок1.png" alt="Скриншот iOS" class="screenshot">
+            <div class="qr-text">
+              <h4>Скачайте бета-версию приложения</h4>
+              <p>Отсканируйте QR-код для загрузки тестовой версии приложения</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="platform-content" id="ios-content">
+          <h3>Личный кабинет для iOS</h3>
+          <p>Элегантное и функциональное приложение для пользователей iPhone, разрабатываемое с учетом всех рекомендаций Apple Human Interface Guidelines.</p>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4><i class="fas fa-mobile-alt"></i> Нативный дизайн</h4>
+              <p>Интерфейс, полностью соответствующий гайдлайнам iOS, с поддержкой темной и светлой темы. Плавные анимации и жесты.</p>
+            </div>
+            <div class="feature-card">
+              <h4><i class="fas fa-bolt"></i> Быстрая загрузка</h4>
+              <p>Оптимизированная работа с сетью и кэширование данных для мгновенного доступа к информации даже при слабом соединении.</p>
+            </div>
+            <div class="feature-card">
+              <h4><i class="fas fa-bell"></i> Уведомления</h4>
+              <p>Своевременные push-уведомления о изменениях в расписании, новых оценках и важных событиях университета.</p>
+            </div>
+          </div>
+          
+          <h4>Текущий прогресс разработки</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Июнь 2024</div>
+              <p>Завершение работы над базовым функционалом авторизации и профиля</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Май 2024</div>
+              <p>Разработка экранов расписания и успеваемости</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Апрель 2024</div>
+              <p>Создание дизайн-системы и UI-кита</p>
+            </div>
+          </div>
+          
+          <h4>Концепт-скриншоты</h4>
+          <div class="screenshots">
+            <img src="images/b.png" alt="Скриншот iOS" class="screenshot">
+            <img src="images/c.png" alt="Скриншот iOS" class="screenshot">
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
 
@@ -217,23 +152,32 @@
   </footer>
 
   <script>
-    // Анимация появления по скроллу
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.1,
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    // Анимация появления
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
-    }, appearOptions);
+    }, { threshold: 0.1 });
 
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
+    fadeElements.forEach(el => observer.observe(el));
+    // Переключение табов
+    const tabs = document.querySelectorAll('.platform-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const tabId = tab.getAttribute('data-tab');
+        document.querySelectorAll('.platform-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        document.getElementById(`${tabId}-content`).classList.add('active');
+      });
     });
   </script>
+
 </body>
 </html>
