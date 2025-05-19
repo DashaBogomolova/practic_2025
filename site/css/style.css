@@ -18,8 +18,8 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--gray);
-    color: var(--dark);
+    background-color: #000;
+    background-image: linear-gradient(135deg, #00c67a, #00a5ff);
     line-height: 1.6;
   }
 
